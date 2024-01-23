@@ -1,0 +1,21 @@
+version: '2'
+services:
+  meet_planning:
+    container_name: meetPlanning
+    image: postgres:15.5
+    ports:
+      - '5435:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: meetPlanningDb
+  meet_planning_test:
+    container_name: meetPlanningTest
+    image: postgres:15.5
+    ports:
+      - '5436:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: meetPlanningTestDb
+

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5436/meetPlanningTestDb
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: true
+    locations: db.migration

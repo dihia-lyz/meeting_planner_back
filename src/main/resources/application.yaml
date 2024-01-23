@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+#    show-sql: true
+  profiles:
+    active: local
+  flyway:
+    enabled: true
+    locations: db.migration
+    cleanDisabled: false
+
+#  mvn clean verify sonar:sonar -Dsonar.projectKey=meeting-planner-project -Dsonar.projectName='meeting-planner-project' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_cc0fe85eb71be6a6511dad1d6d57bf67ddba832b

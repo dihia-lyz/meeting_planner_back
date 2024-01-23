@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc-secretsmanager:postgresql://database-1.c34saacoeuv8.us-east-2.rds.amazonaws.com:5432/postgres
+    username: meetingplanner-credentials
+    driverClassName: com.amazonaws.secretsmanager.sql.AWSSecretsManagerPostgreSQLDriver
+

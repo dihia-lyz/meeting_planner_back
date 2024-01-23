@@ -1,0 +1,1 @@
+ALTER TABLE removable_equipment drop column reserved_number;
