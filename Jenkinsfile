@@ -15,7 +15,7 @@ node("dihia-ci"){
     stage("build"){
         echo "start build"
         sh "chmod 777 mvnw"
-        sh "./mvnw package -DskipTests=true"
+        sh "./mvnw clean package -DskipTests=true"
     }
 
 //     stage("build docker image"){
